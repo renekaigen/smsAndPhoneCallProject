@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ubicacion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,7 +17,81 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6L-fW-Pe9">
+                                <rect key="frame" x="149" y="81" width="46" height="30"/>
+                                <state key="normal" title="SMS-1"/>
+                                <connections>
+                                    <action selector="buttonSendSms_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fLm-O3-OKo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dho-ct-ap0">
+                                <rect key="frame" x="323" y="81" width="48" height="30"/>
+                                <state key="normal" title="SMS-5"/>
+                                <connections>
+                                    <action selector="buttonSendSms_5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jbu-QM-JOr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4T8-f7-Sap">
+                                <rect key="frame" x="147" y="137" width="48" height="30"/>
+                                <state key="normal" title="SMS-2"/>
+                                <connections>
+                                    <action selector="buttonSendSms_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ks-7N-oac"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CA-da-9Jb">
+                                <rect key="frame" x="323" y="137" width="48" height="30"/>
+                                <state key="normal" title="SMS-6"/>
+                                <connections>
+                                    <action selector="buttonSendSms_6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dwY-ZF-O1M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1r-3e-uAh">
+                                <rect key="frame" x="147" y="214" width="48" height="30"/>
+                                <state key="normal" title="SMS-3"/>
+                                <connections>
+                                    <action selector="buttonSendSms_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FTZ-lw-lVB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFK-rl-N05">
+                                <rect key="frame" x="312" y="214" width="70" height="30"/>
+                                <state key="normal" title="PhoneCall"/>
+                                <connections>
+                                    <action selector="doPhoneCall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y7j-7L-Vjz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VF-oP-3Ex">
+                                <rect key="frame" x="332" y="278" width="31" height="30"/>
+                                <state key="normal" title="Otro"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0C-iW-w4A">
+                                <rect key="frame" x="148" y="278" width="48" height="30"/>
+                                <state key="normal" title="SMS-4"/>
+                                <connections>
+                                    <action selector="buttonSendSms_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FLA-HB-O6r"/>
+                                    <action selector="buttonSendSms_4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3qS-EZ-P7P"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dho-ct-ap0" secondAttribute="trailing" constant="209" id="HQA-Gp-VhX"/>
+                            <constraint firstItem="3VF-oP-3Ex" firstAttribute="top" secondItem="iFK-rl-N05" secondAttribute="bottom" constant="34" id="X4h-Fd-Rd6"/>
+                            <constraint firstItem="3VF-oP-3Ex" firstAttribute="centerX" secondItem="iFK-rl-N05" secondAttribute="centerX" id="XZZ-xS-VfY"/>
+                            <constraint firstItem="l6L-fW-Pe9" firstAttribute="baseline" secondItem="dho-ct-ap0" secondAttribute="baseline" id="Xgk-ib-Chb"/>
+                            <constraint firstItem="s0C-iW-w4A" firstAttribute="top" secondItem="G1r-3e-uAh" secondAttribute="bottom" constant="34" id="Z6c-wW-oHJ"/>
+                            <constraint firstItem="l6L-fW-Pe9" firstAttribute="leading" secondItem="s0C-iW-w4A" secondAttribute="leading" id="Ztx-OE-pQV"/>
+                            <constraint firstItem="l6L-fW-Pe9" firstAttribute="centerX" secondItem="4T8-f7-Sap" secondAttribute="centerX" id="aSo-Xu-cIv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s0C-iW-w4A" secondAttribute="bottom" constant="292" id="bJU-lJ-jHq"/>
+                            <constraint firstItem="4T8-f7-Sap" firstAttribute="top" secondItem="l6L-fW-Pe9" secondAttribute="bottom" constant="26" id="jQ6-OY-P1v"/>
+                            <constraint firstItem="0CA-da-9Jb" firstAttribute="baseline" secondItem="4T8-f7-Sap" secondAttribute="baseline" id="ju8-Ce-vzf"/>
+                            <constraint firstItem="dho-ct-ap0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="kei-22-h1d"/>
+                            <constraint firstItem="l6L-fW-Pe9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="128" id="mny-8y-Idm"/>
+                            <constraint firstItem="l6L-fW-Pe9" firstAttribute="centerX" secondItem="G1r-3e-uAh" secondAttribute="centerX" id="nRZ-N8-1cp"/>
+                            <constraint firstItem="s0C-iW-w4A" firstAttribute="baseline" secondItem="3VF-oP-3Ex" secondAttribute="baseline" id="p68-Pe-LJT"/>
+                            <constraint firstItem="3VF-oP-3Ex" firstAttribute="centerX" secondItem="0CA-da-9Jb" secondAttribute="centerX" id="qP6-qo-Hgm"/>
+                            <constraint firstItem="3VF-oP-3Ex" firstAttribute="centerX" secondItem="dho-ct-ap0" secondAttribute="centerX" id="uNC-CS-D4x"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

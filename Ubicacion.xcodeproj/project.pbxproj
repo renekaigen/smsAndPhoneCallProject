@@ -14,6 +14,7 @@
 		6082C4EA1CA0B02F00A41576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6082C4E81CA0B02F00A41576 /* LaunchScreen.storyboard */; };
 		6082C4F51CA0B02F00A41576 /* UbicacionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6082C4F41CA0B02F00A41576 /* UbicacionTests.swift */; };
 		6082C5001CA0B03000A41576 /* UbicacionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6082C4FF1CA0B03000A41576 /* UbicacionUITests.swift */; };
+		6082C50E1CA0B57D00A41576 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6082C50D1CA0B57D00A41576 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6082C4FB1CA0B02F00A41576 /* UbicacionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UbicacionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6082C4FF1CA0B03000A41576 /* UbicacionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbicacionUITests.swift; sourceTree = "<group>"; };
 		6082C5011CA0B03000A41576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6082C50D1CA0B57D00A41576 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6082C50E1CA0B57D00A41576 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		6082C4D31CA0B02F00A41576 = {
 			isa = PBXGroup;
 			children = (
+				6082C50D1CA0B57D00A41576 /* MessageUI.framework */,
 				6082C4DE1CA0B02F00A41576 /* Ubicacion */,
 				6082C4F31CA0B02F00A41576 /* UbicacionTests */,
 				6082C4FE1CA0B03000A41576 /* UbicacionUITests */,
